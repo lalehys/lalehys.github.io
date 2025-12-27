@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laleh Yousefi - Resume</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+            padding: 40px;
+            max-width: 210mm;
+            margin: 0 auto;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #2c3e50;
+        }
+        
+        .photo-placeholder {
+            width: 120px;
+            height: 120px;
+            background: #ecf0f1;
+            border: 2px solid #bdc3c7;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 12px;
+            color: #7f8c8d;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .header-info h1 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .education-item, .experience-item {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .education-item::before, .experience-item::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .company {
+            color: #555;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+            }
+            
+            .contact-info a {
+                color: #3498db;
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="photo-placeholder">Photo Placeholder</div>
+            <div class="header-info">
+                <h1>Laleh Yousefi</h1>
+                <div class="contact-info">
+                    <div>Breda 4826 KN</div>
+                    <div><a href="mailto:laleh.ys@gmail.com">laleh.ys@gmail.com</a></div>
+                    <div>+31610124469</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <strong>B.Sc., Computer Engineering</strong> - Iran (2007)
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item">
+                <span class="job-title">Logistiek Medewerker</span> - <span class="company">Schenker, Breda, Netherlands (2025)</span>
+            </div>
+            <div class="experience-item">
+                <span class="job-title">Order Picker</span> - <span class="company">Fource Company, Breda, Netherlands (2025)</span>
+            </div>
+            <div class="experience-item">
+                <span class="job-title">Catering Stuff</span> - <span class="company">Laziz Catering, Breda, Netherlands (2024)</span>
+            </div>
+            <div class="experience-item">
+                <span class="job-title">Technical Support Specialist</span> - <span class="company">Internet Service Provider, Iran</span>
+            </div>
+            <div class="experience-item">
+                <span class="job-title">Hardware Technician</span> - <span class="company">Iran</span>
+            </div>
+            <div class="experience-item">
+                <span class="job-title">School Supervisor</span> - <span class="company">Iran</span>
+            </div>
+            <div class="experience-item">
+                <span class="job-title">Financial Systems Support</span> - <span class="company">Stock Exchange Company, Iran</span>
+            </div>
+            <div class="experience-item">
+                <span class="job-title">Computer Lab Assistant</span> - <span class="company">Ferdowsi University, Iran</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
